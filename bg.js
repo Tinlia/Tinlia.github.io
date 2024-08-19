@@ -1,50 +1,50 @@
 const stages = [
     {
-        question: "What body of wine do you like?",
-        options: ["Light", "Medium", "Full"]
+        question: "What bodies of wine do you like?",
+        options: ["Light-bodied", "Medium-bodied", "Full-bodied"]
     },
     {
-        question: "What type of wine do you like?",
-        options: ["Red", "Rose", "White", "Sparkling"]
+        question: "What types of wine do you like?",
+        options: ["Red", "Rose", "White", "Sparkling", "Blend"]
     },
     {
-        question: "What sweetness of wine do you like?",
+        question: "What sweetness levels do you like?",
         options: ["Absolute Dry", "Very Dry", "Dry", "Semi-Dry", "Sweet"]
     },
     {
         question: "What notes do you like in wine?",
         options: ["Apple", "Pear", "Orange", "Gooseberry", "Citrus", "Floral", "Spice", "Tropical", "Berries", "Butter", "Oak", "Strawberry", "Cherry", "Plum", "Peppercorn", "Raspberry", "Mushroom", "Dark Chocolate", "Vanilla", "Honey", "Apricot", "Peach", "Lychee", "Toasty", "Mineral", "Earthy", "Pipe Tobacco", "Cranberry"]
     }
-];
+]
 
 const wine_list = [
-    { name: "Brut Sparkling Wine", tags:["semi-dry", "sparkling", "white", "apple", "melon", "citrus", "light-bodied"]},
-    { name: "Aligote", tags: ["very dry", "white", "apple", "pear", "light-bodied"]},
-    { name: "Sauvingnon Blanc", tags: ["very dry", "white", "gooseberry", "citrus", "light-bodied"]},
-    { name: "Gewurztraminer", tags: ["very dry", "white", "orange", "lychee", "floral", "full-bodied", "spice", "tropical"]},
-    { name: "Barrel Fermented Chardonnay", tags: ["absolute dry", "white", "berries", "butter", "oak", "full-bodied"]},
-    { name: "Rose", tags: ["dry", "strawberry", "rose", "cranberry", "light-bodied"]},
-    { name: "Gamay Noir", tags: ["very dry", "red", "cherry", "plum", "berries", "spice", "medium-bodied"]},
-    { name: "Gamay Noir 'Droit'", tags: ["very dry", "red", "peppercorn", "cherry", "plum", "berries", "spice", "medium-bodied"]},
-    { name: "Atelier", tags: ["dry", "red", "blend", "plum", "berries", "spice", "medium-bodied"]},
-    { name: "Estate Pinot Noir", tags: ["very dry", "red", "strawberry", "raspberry", "floral", "mushroom", "medium-bodied"]},
-    { name: "Estate Cabernet Sauvignon", tags: ["very dry", "red", "oak", "cherry", "dark chocolate", "spice", "vanilla", "full-bodied"]},
-    { name: "Cabernet Merlot", tags: ["very dry", "red", "blend", "oak", "dark chocolate", "raspberry", "full-bodied"]},
-    { name: "Vidal Icewine", tags: ["very sweet", "white", "honey", "apricot", "peach", "lychee", "full-bodied"]},
-    { name: "Rose Sparkling Wine", tags: ["semi-dry", "sparkling", "cranberry", "floral", "rose", "strawberry", "light-bodied"]},
-    { name: "Blanc de Blancs Sparkling Wine", tags: ["absolute dry", "sparkling", "white", "vanilla", "citrus", "toasty"]},
-    { name: "'Old Vines' Riesling", tags: ["sweet", "white", "citrus", "mineral", "full-bodied"]},
-    { name: "'Old Vines' Pinot Noir", tags: ["very dry", "red", "raspberry", "strawberry", "mushroom", "earthy", "spice", "medium-bodied"]},
-    { name: "'Old Vines' Cabernet-Merlot", tags: ["very dry", "red", "oak", "peppercorn", "blend", "cherry", "raspberry", "medium-bodied"]},
-    { name: "Fume Blanc", tags: ["absolute dry", "white", "citrus", "oak", "tropical", "full-bodied"]},
-    { name: "St. Davids Bench Chardonnay", tags: ["very dry", "white", "oak", "melon", "spice", "berries", "mineral", "full-bodied"]},
-    { name: "Paul Bosc Chardonnay", tags: ["very dry", "white", "oak", "butter", "citrus", "melon", "full-bodied"]},
-    { name: "Paul Bosc Pinot Noir", tags: ["very dry", "red", "strawberry", "raspberry", "floral", "earthy", "full-bodied"]},
-    { name: "St. Davids Bench Merlot", tags: ["very dry", "red", "cherry", "plum", "dark chocolate", "full-bodied"]},
-    { name: "Cabernet Franc", tags: ["very dry", "red", "oak", "raspberry", "peppercorn", "pipe tobacco", "full-bodied"]},
-    { name: "St. Davids Bench Cabernet Sauvignon", tags: ["very dry", "red", "oak", "plum", "cherry", "dark chocolate", "peppercorn", "full-bodied"]},
-    { name: "Equuleus", tags: ["very dry", "red", "oak", "berries", "dark chocolate", "blend", "full-bodied"]},
-    { name: "Cabernet Icewine", tags: ["very sweet", "red", "strawberry", "cranberry", "full-bodied"]}
+    { name: "Brut Sparkling Wine", tags:["Semi-Dry", "Sparkling", "White", "Apple", "Melon", "Citrus", "Light-bodied"]},
+    { name: "Aligote", tags: ["Very Dry", "White", "Apple", "Pear", "Light-bodied"]},
+    { name: "Sauvingnon Blanc", tags: ["Very Dry", "White", "Gooseberry", "Citrus", "Light-bodied"]},
+    { name: "Gewurztraminer", tags: ["Very Dry", "White", "Orange", "Lychee", "Floral", "Full-bodied", "Spice", "Tropical"]},
+    { name: "Barrel Fermented Chardonnay", tags: ["Absolute Dry", "White", "Berries", "Butter", "Oak", "Full-bodied"]},
+    { name: "Rose", tags: ["Dry", "Strawberry", "Rose", "Cranberry", "Light-bodied"]},
+    { name: "Gamay Noir", tags: ["Very Dry", "Red", "Cherry", "Plum", "Berries", "Spice", "Medium-bodied"]},
+    { name: "Gamay Noir 'Droit'", tags: ["Very Dry", "Red", "Peppercorn", "Cherry", "Plum", "Berries", "Spice", "Medium-bodied"]},
+    { name: "Atelier", tags: ["Dry", "Red", "Blend", "Plum", "Berries", "Spice", "Medium-bodied"]},
+    { name: "Estate Pinot Noir", tags: ["Very Dry", "Red", "Strawberry", "Raspberry", "Floral", "Mushroom", "Medium-bodied"]},
+    { name: "Estate Cabernet Sauvignon", tags: ["Very Dry", "Red", "Oak", "Cherry", "Dark Chocolate", "Spice", "Vanilla", "Full-bodied"]},
+    { name: "Cabernet Merlot", tags: ["Very Dry", "Red", "Blend", "Oak", "Dark Chocolate", "Raspberry", "Full-bodied"]},
+    { name: "Vidal Icewine", tags: ["Sweet", "White", "Honey", "Apricot", "Peach", "Lychee", "Full-bodied"]},
+    { name: "Rose Sparkling Wine", tags: ["Semi-Dry", "Sparkling", "Cranberry", "Floral", "Rose", "Strawberry", "Light-bodied"]},
+    { name: "Blanc de Blancs Sparkling Wine", tags: ["Absolute Dry", "Sparkling", "White", "Vanilla", "Citrus", "Toasty"]},
+    { name: "'Old Vines' Riesling", tags: ["Sweet", "White", "Citrus", "Mineral", "Full-bodied"]},
+    { name: "'Old Vines' Pinot Noir", tags: ["Very Dry", "Red", "Raspberry", "Strawberry", "Mushroom", "Earthy", "Spice", "Medium-bodied"]},
+    { name: "'Old Vines' Cabernet-Merlot", tags: ["Very Dry", "Red", "Oak", "Peppercorn", "Blend", "Cherry", "Raspberry", "Medium-bodied"]},
+    { name: "Fume Blanc", tags: ["Absolute Dry", "White", "Citrus", "Oak", "Tropical", "Full-bodied"]},
+    { name: "St. Davids Bench Chardonnay", tags: ["Very Dry", "White", "Oak", "melon", "Spice", "Berries", "Mineral", "Full-bodied"]},
+    { name: "Paul Bosc Chardonnay", tags: ["Very Dry", "White", "Oak", "Butter", "Citrus", "melon", "Full-bodied"]},
+    { name: "Paul Bosc Pinot Noir", tags: ["Very Dry", "Red", "Strawberry", "Raspberry", "Floral", "Earthy", "Full-bodied"]},
+    { name: "St. Davids Bench Merlot", tags: ["Very Dry", "Red", "Cherry", "Plum", "Dark Chocolate", "Full-bodied"]},
+    { name: "Cabernet Franc", tags: ["Very Dry", "Red", "Oak", "Raspberry", "Peppercorn", "Pipe Tobacco", "Full-bodied"]},
+    { name: "St. Davids Bench Cabernet Sauvignon", tags: ["Very Dry", "Red", "Oak", "Plum", "Cherry", "Dark Chocolate", "Peppercorn", "Full-bodied"]},
+    { name: "Equuleus", tags: ["Very Dry", "Red", "Oak", "Berries", "Dark Chocolate", "Blend", "Full-bodied"]},
+    { name: "Cabernet Icewine", tags: ["Sweet", "Red", "Strawberry", "Cranberry", "Full-bodied"]}
 ];
 
 let tags = []
@@ -98,9 +98,18 @@ function nextStage() {
 }
 
 function displayResults() {
+    console.log("User selected tags:", tags);
+
     const matches = wine_list.map(wine => {
-        const matchCount = wine.tags.filter(tag => tags.includes(tag)).length;
+        const matchCount = wine.tags.filter(tag => {
+            const isMatch = tags.includes(tag);
+            console.log(`Checking if user tag "${tag}" is in wine "${wine.name}": ${isMatch}`);
+            return isMatch;
+        }).length;
+
         const matchPercentage = (matchCount / wine.tags.length) * 100;
+        console.log(`Wine "${wine.name}" match count: ${matchCount}, match percentage: ${matchPercentage.toFixed(2)}%`);
+
         return { name: wine.name, matchPercentage };
     });
 
@@ -115,7 +124,7 @@ function displayResults() {
         </ul>
     `;
 
-    console.log(tags);
+    console.log("Top matches:", topMatches);
 }
 
 // Load the first stage
