@@ -36,3 +36,10 @@ body {
 #next {
     background-color: #00b371;
 }
+#wineimg {
+    max-width: 300px;
+    max-height: 300px;
+}
+.td {
+    text-align: center;
+}
