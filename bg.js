@@ -127,7 +127,7 @@ function displayResults() {
         <div class="question">Thank you for completing the quiz! Here are your top wine matches:</div>
         <table>
             <tr>
-                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><br><img id="wineimg" src="assets/${match.name}.png"></td>`).join('')}
+                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><br><img id="wineimg" src="assets/${match.name}.PNG"></td>`).join('')}
             </tr>
         </table>
         <br>
