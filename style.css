@@ -1,99 +1,35 @@
-.headerWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-    background-color: #333;
-    color: white;
-    width: 97%;
-    height:10vh;
-}
-.bodyWrapper{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: top;
-    background-color: #ba7616;
-    color: white;
-    max-width: 100%;
-    height:auto;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: stretch;
-}
-.tabs{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
-    background-color: #c34c4c;
-    color: white;
-    width: 10%;
-    align-items: row;
-    position: static;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
-.demoWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: bottom;
-    padding: 20px 20px;
-    background-color: #1e7566;
-    color: white;
-    width: 85%;
-    height:100vh;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+.quiz-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
-.indexForm{
-    width:100%;
-    background-color:#333;
-    align-items: center;
+.question {
+    margin-bottom: 20px;
 }
-.tabButton{
-    background-color: #6d6161;
-    color: white;
+.options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
-    width:75px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    border:rgb(179, 155, 155) 2px solid;
 }
-.demoBlock{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    background-color: #333;
-    color: white;
-    width: 100%;
-    margin-top: 20px;
-}
-.demoText, .demoCode{
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width:60%;
-    background-color: #bc7171;
-}
-.demoText{
-    padding: 10px 10px;
-    width:40%;
-    background-color: #814848;
-    padding-left: 30px;
-    max-width: 90%;
-}
-.demoImg{
-    width: 100%;
-    height: auto;
+.options button:hover {
+    background-color: #0056b3;
 }
