@@ -119,9 +119,11 @@ function displayResults() {
 
     quizContainer.innerHTML = `
         <div class="question">Thank you for completing the quiz! Here are your top wine matches:</div>
-        <ul>
-            ${topMatches.map(match => `<li>${match.name}: ${match.matchPercentage.toFixed(2)}% match</li>`).join('')}
-        </ul>
+        <table>
+            <tr>
+                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><img id="wineimg" src="assets/${match.name}.png"></td>`).join('')}
+            </tr>
+        </table>
     `;
 
     console.log("Top matches:", topMatches);
