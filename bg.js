@@ -97,6 +97,12 @@ function nextStage() {
     }
 }
 
+function retake() {
+    currentStage = 0;
+    tags = [];
+    loadStage(currentStage);
+}
+
 function displayResults() {
     console.log("User selected tags:", tags);
 
@@ -121,10 +127,13 @@ function displayResults() {
         <div class="question">Thank you for completing the quiz! Here are your top wine matches:</div>
         <table>
             <tr>
-                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><img id="wineimg" src="assets/${match.name}.png"></td>`).join('')}
+                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><br><img id="wineimg" src="assets/${match.name}.png"></td>`).join('')}
             </tr>
         </table>
+        <br>
+        <button class="quizbutton" id="next" onclick="retake()">Retake Quiz</button>
     `;
+    
 
     console.log("Top matches:", topMatches);
 }
