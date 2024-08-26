@@ -61,7 +61,7 @@ body {
     max-height: 180px;
 }
 .outer-container{
-    width: 100%
+    max-width: 400px;
 }
 td {
     text-align: center;
