@@ -58,8 +58,16 @@ function loadStage(stageIndex) {
         <div class="question">${stage.question}</div>
         <div class="options">
             ${stage.options.map(option => `<button class="quizbutton" id="${option}">${option}</button>`).join('')}
-            <button id="next" onclick="nextStage()">Next</button>
-            <button id="back" onclick="previousStage()">Back</button>
+            <table>
+            <tr>
+                <td>
+                    <button id="next" onclick="nextStage()">Next</button>
+                </td>
+                <td>
+                    <button id="back" onclick="previousStage()">Back</button>
+                </td>
+            </tr>
+            </table>
         </div>
     `;
 
