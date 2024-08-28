@@ -17,8 +17,13 @@ body {
     width: 100%;
     margin: auto;
 }
-.question {
+.question, .matchTitle {
     margin-bottom: 20px;
+}
+.matchTitle{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
 }
 .options button {
     display: block;
