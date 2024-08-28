@@ -61,10 +61,10 @@ function loadStage(stageIndex) {
             <table>
             <tr>
                 <td>
-                    <button id="next" onclick="nextStage()">Next</button>
+                    <button id="back" onclick="previousStage()">Back</button>
                 </td>
                 <td>
-                    <button id="back" onclick="previousStage()">Back</button>
+                    <button id="next" onclick="nextStage()">Next</button>
                 </td>
             </tr>
             </table>
