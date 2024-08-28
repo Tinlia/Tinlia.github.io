@@ -105,7 +105,20 @@ function retake() {
 
 function displayResults() {
     console.log("User selected tags:", tags);
+    console.log("Wine list:", wine_list);
 
+    // Step 1: Iterate over each wine and set the type based on tags
+    wine_list.forEach(wine => {
+        if (wine.tags.includes('Red')) {
+            wine.type = 'Red';
+        } else if (wine.tags.includes('White')) {
+            wine.type = 'White';
+        } else {
+            wine.type = 'Unknown'; // Handle cases where neither tag is present
+        }
+    });
+
+    // Step 2: Calculate match percentages
     const matches = wine_list.map(wine => {
         const matchCount = wine.tags.filter(tag => {
             const isMatch = tags.includes(tag);
@@ -116,26 +129,51 @@ function displayResults() {
         const matchPercentage = (matchCount / wine.tags.length) * 100;
         console.log(`Wine "${wine.name}" match count: ${matchCount}, match percentage: ${matchPercentage.toFixed(2)}%`);
 
-        return { name: wine.name, matchPercentage };
+        return { name: wine.name, matchPercentage, type: wine.type };
     });
 
-    matches.sort((a, b) => b.matchPercentage - a.matchPercentage);
+    console.log("Matches:", matches);
 
-    const topMatches = matches.slice(0, 3);
+    // Step 3: Separate matches into red and white wines
+    const redMatches = matches.filter(match => match.type === 'Red');
+    const whiteMatches = matches.filter(match => match.type === 'White');
 
-    quizContainer.innerHTML = `
-        <div class="question">Thank you for completing the quiz! Here are your top wine matches:</div>
+    console.log("Red matches:", redMatches);
+    console.log("White matches:", whiteMatches);
+
+    // Step 4: Sort matches by match percentage
+    redMatches.sort((a, b) => b.matchPercentage - a.matchPercentage);
+    whiteMatches.sort((a, b) => b.matchPercentage - a.matchPercentage);
+
+    // Step 5: Get top 3 matches for each type
+    const topRedMatches = redMatches.slice(0, 3);
+    const topWhiteMatches = whiteMatches.slice(0, 3);
+
+    console.log("Top red matches:", topRedMatches);
+    console.log("Top white matches:", topWhiteMatches);
+
+    // Step 6: Generate HTML for top matches
+    const generateMatchHTML = (matches, title) => `
+        <div class="matchTitle">${title}</div>
         <table>
             <tr>
-                ${topMatches.map(match => `<td><b>${match.name}</b><br>(${match.matchPercentage.toFixed(0)}% match)<br><br><img id="wineimg" src="assets/${match.name}.PNG"></td>`).join('')}
+                ${matches.map(match => `
+                    <td>
+                        <b>${match.name}</b><br>
+                        (${match.matchPercentage.toFixed(0)}% match)<br><br>
+                        <img id="wineimg" src="assets/${match.name}.PNG">
+                    </td>
+                `).join('')}
             </tr>
         </table>
         <br>
+    `;
+
+    quizContainer.innerHTML = `
+        ${generateMatchHTML(topRedMatches, "Your top 3 Red Wines")}
+        ${generateMatchHTML(topWhiteMatches, "Your top 3 White Wines")}
         <button class="quizbutton" id="next" onclick="retake()">Retake Quiz</button>
     `;
-    
-
-    console.log("Top matches:", topMatches);
 }
 
 // Load the first stage
