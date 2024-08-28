@@ -73,3 +73,6 @@ td, tr {
     vertical-align: middle;
     width: 100%;
 }
+td {
+    width: 50%;
+}
