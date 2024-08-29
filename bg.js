@@ -111,6 +111,10 @@ function nextStage() {
 
 function previousStage() {
     if (currentStage > 0) {
+        const previousStageOptions = stages[currentStage-1].options; // Get the options for the previous stage
+        previousStageOptions.forEach(option => {
+            tags = tags.filter(tag => tag !== option.toString());
+        });
         currentStage--;
         loadStage(currentStage);
     }
