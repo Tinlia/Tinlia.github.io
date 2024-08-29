@@ -70,6 +70,9 @@ function loadStage(stageIndex) {
             </table>
         </div>
     `;
+    if (currentStage == 0) {
+        document.getElementById('back').style.background = '#656b71';
+    }
 
     stage.options.forEach(option => {
         const button = document.getElementById(option);
