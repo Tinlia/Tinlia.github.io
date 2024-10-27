@@ -13,7 +13,7 @@ const stages = [
     },
     {
         question: "What notes do you like in wine?",
-        options: ["Apple", "Pear", "Orange", "Gooseberry", "Citrus", "Floral", "Spice", "Tropical", "Berries", "Butter", "Oak", "Strawberry", "Cherry", "Plum", "Peppercorn", "Raspberry", "Mushroom", "Dark Chocolate", "Vanilla", "Honey", "Apricot", "Peach", "Lychee", "Toasty", "Mineral", "Earthy", "Pipe Tobacco", "Cranberry"]
+        options: ["Apple", "Pear", "Gooseberry", "Citrus", "Floral", "Spice", "Tropical", "Berries", "Butter", "Oak", "Strawberry", "Cherry", "Plum", "Peppercorn", "Raspberry", "Mushroom", "Dark Chocolate", "Vanilla", "Honey", "Apricot", "Peach", "Lychee", "Toasty", "Mineral", "Earthy", "Pipe Tobacco", "Cranberry"]
     }
 ]
 
@@ -21,7 +21,7 @@ const wine_list = [
     { name: "Brut Sparkling Wine", tags:["Off-Dry", "Sparkling", "White", "Apple", "Melon", "Citrus", "Light-bodied"]},
     { name: "Aligote", tags: ["Very Dry", "White", "Apple", "Pear", "Light-bodied"]},
     { name: "Sauvingnon Blanc", tags: ["Very Dry", "White", "Gooseberry", "Citrus", "Light-bodied"]},
-    { name: "Gewurztraminer", tags: ["Very Dry", "White", "Orange", "Lychee", "Floral", "Full-bodied", "Spice", "Tropical"]},
+    { name: "Gewurztraminer", tags: ["Very Dry", "White", "Citrus", "Lychee", "Floral", "Full-bodied", "Spice", "Tropical"]},
     { name: "Barrel Fermented Chardonnay", tags: ["Very Dry", "White", "Berries", "Butter", "Oak", "Full-bodied"]},
     { name: "Rose", tags: ["Dry", "Strawberry", "Rose", "Cranberry", "Light-bodied"]},
     { name: "Gamay Noir", tags: ["Very Dry", "Red", "Cherry", "Plum", "Berries", "Spice", "Medium-bodied"]},
