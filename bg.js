@@ -21,7 +21,7 @@ const wine_list = [
     { name: "Brut Sparkling Wine", tags:["Off-Dry", "Sparkling", "White", "Apple", "Melon", "Citrus", "Light-bodied"]},
     { name: "Aligote", tags: ["Very Dry", "White", "Apple", "Pear", "Light-bodied"]},
     { name: "Sauvingnon Blanc", tags: ["Very Dry", "White", "Gooseberry", "Citrus", "Light-bodied"]},
-    { name: "Gewurztraminer", tags: ["Very Dry", "White", "Citrus", "Lychee", "Floral", "Full-bodied", "Spice", "Tropical"]},
+    { name: "Gewurztraminer", tags: ["Very Dry", "White", "Apple", "Floral", "Full-bodied", "Tropical"]},
     { name: "Barrel Fermented Chardonnay", tags: ["Very Dry", "White", "Berries", "Butter", "Oak", "Full-bodied"]},
     { name: "Rose", tags: ["Dry", "Strawberry", "Rose", "Cranberry", "Light-bodied"]},
     { name: "Gamay Noir", tags: ["Very Dry", "Red", "Cherry", "Plum", "Berries", "Spice", "Medium-bodied"]},
