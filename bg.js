@@ -31,11 +31,12 @@ const wine_list = [
     { name: "Estate Cabernet Sauvignon", tags: ["Very Dry", "Red", "Oak", "Cherry", "Dark Chocolate", "Spice", "Vanilla", "Full-bodied"]},
     { name: "Cabernet Merlot", tags: ["Very Dry", "Red", "Blend", "Oak", "Dark Chocolate", "Raspberry", "Full-bodied"]},
     { name: "Vidal Icewine", tags: ["Sweet", "White", "Honey", "Apricot", "Peach", "Lychee", "Full-bodied"]},
-    { name: "Rose Sparkling Wine", tags: ["Off-Dry", "Sparkling", "Cranberry", "Floral", "Rose", "Strawberry", "Light-bodied"]},
+    { name: "Rose Sparkling Wine", tags: ["Dry", "Off-Dry", "Sparkling", "Cranberry", "Floral", "Rose", "Strawberry", "Light-bodied"]},
     { name: "Blanc de Blancs Sparkling Wine", tags: ["Very Dry", "Sparkling", "White", "Vanilla", "Citrus", "Toasty"]},
     { name: "'Old Vines' Riesling", tags: ["Off-Dry", "Dry", "White", "Citrus", "Mineral", "Full-bodied"]},
     { name: "'Old Vines' Pinot Noir", tags: ["Very Dry", "Red", "Raspberry", "Strawberry", "Mushroom", "Earthy", "Spice", "Medium-bodied"]},
     { name: "'Old Vines' Cabernet-Merlot", tags: ["Very Dry", "Red", "Oak", "Peppercorn", "Blend", "Cherry", "Raspberry", "Medium-bodied"]},
+    { name: "'Old Vines' Savagnin", tags: ["Dry", "White", "Mineral", "Citrus", "Medium-bodied"]},
     { name: "Fume Blanc", tags: ["Very Dry", "White", "Citrus", "Oak", "Tropical", "Full-bodied"]},
     { name: "St. Davids Bench Chardonnay", tags: ["Very Dry", "White", "Oak", "melon", "Spice", "Berries", "Mineral", "Full-bodied"]},
     { name: "Paul Bosc Chardonnay", tags: ["Very Dry", "White", "Oak", "Butter", "Citrus", "melon", "Full-bodied"]},
@@ -45,7 +46,7 @@ const wine_list = [
     { name: "St. Davids Bench Cabernet Sauvignon", tags: ["Very Dry", "Red", "Oak", "Plum", "Cherry", "Dark Chocolate", "Peppercorn", "Full-bodied"]},
     { name: "Equuleus", tags: ["Very Dry", "Red", "Oak", "Berries", "Dark Chocolate", "Blend", "Full-bodied"]},
     { name: "Cabernet Icewine", tags: ["Sweet", "Red", "Strawberry", "Cranberry", "Full-bodied"]},
-    { name: "Riesling Off-Dry", tags: ["Off-Dry", "White", "Citrus", "Mineral", "Honey", "Full-bodied"]}
+    { name: "Riesling Off-Dry", tags: ["Off-Dry", "Sweet", "White", "Citrus", "Mineral", "Honey", "Full-bodied"]}
 ];
 
 let tags = []
